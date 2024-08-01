@@ -19,6 +19,11 @@
 		C6399FAB2C5417BC00CCFF1C /* AmityUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6399FAA2C5417BC00CCFF1C /* AmityUIKit.framework */; };
 		C6399FAC2C5417BC00CCFF1C /* AmityUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6399FAA2C5417BC00CCFF1C /* AmityUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6399FAF2C54194100CCFF1C /* SharedFrameworks in Frameworks */ = {isa = PBXBuildFile; productRef = C6399FAE2C54194100CCFF1C /* SharedFrameworks */; };
+		C6B504012C58908700EF35DD /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B503FF2C58908700EF35DD /* AppManager.swift */; };
+		C6B504022C58908700EF35DD /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B504002C58908700EF35DD /* EndpointManager.swift */; };
+		C6B504072C58918700EF35DD /* CustomEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B504042C58918700EF35DD /* CustomEventHandler.swift */; };
+		C6B504082C58918700EF35DD /* CustomChannelEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B504052C58918700EF35DD /* CustomChannelEventHandler.swift */; };
+		C6B504092C58918700EF35DD /* CustomFeedEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B504062C58918700EF35DD /* CustomFeedEventHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		C6399F972C54117400CCFF1C /* SampleUIAmityProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIAmityProUITests.swift; sourceTree = "<group>"; };
 		C6399F992C54117400CCFF1C /* SampleUIAmityProUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIAmityProUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C6399FAA2C5417BC00CCFF1C /* AmityUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmityUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B503FF2C58908700EF35DD /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		C6B504002C58908700EF35DD /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
+		C6B504042C58918700EF35DD /* CustomEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEventHandler.swift; sourceTree = "<group>"; };
+		C6B504052C58918700EF35DD /* CustomChannelEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChannelEventHandler.swift; sourceTree = "<group>"; };
+		C6B504062C58918700EF35DD /* CustomFeedEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFeedEventHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +130,8 @@
 		C6399F752C54117300CCFF1C /* SampleUIAmityPro */ = {
 			isa = PBXGroup;
 			children = (
+				C6B504032C58917200EF35DD /* EventHandler */,
+				C6B503FE2C58906D00EF35DD /* Manager */,
 				C6399F762C54117300CCFF1C /* AppDelegate.swift */,
 				C6399F782C54117300CCFF1C /* SceneDelegate.swift */,
 				C6399F7A2C54117300CCFF1C /* ViewController.swift */,
@@ -154,6 +166,25 @@
 				C6399FAA2C5417BC00CCFF1C /* AmityUIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B503FE2C58906D00EF35DD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C6B503FF2C58908700EF35DD /* AppManager.swift */,
+				C6B504002C58908700EF35DD /* EndpointManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C6B504032C58917200EF35DD /* EventHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C6B504052C58918700EF35DD /* CustomChannelEventHandler.swift */,
+				C6B504042C58918700EF35DD /* CustomEventHandler.swift */,
+				C6B504062C58918700EF35DD /* CustomFeedEventHandler.swift */,
+			);
+			path = EventHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +327,11 @@
 				C6399F7B2C54117300CCFF1C /* ViewController.swift in Sources */,
 				C6399F772C54117300CCFF1C /* AppDelegate.swift in Sources */,
 				C6399F792C54117300CCFF1C /* SceneDelegate.swift in Sources */,
+				C6B504012C58908700EF35DD /* AppManager.swift in Sources */,
+				C6B504072C58918700EF35DD /* CustomEventHandler.swift in Sources */,
+				C6B504082C58918700EF35DD /* CustomChannelEventHandler.swift in Sources */,
+				C6B504092C58918700EF35DD /* CustomFeedEventHandler.swift in Sources */,
+				C6B504022C58908700EF35DD /* EndpointManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
